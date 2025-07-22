@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagem - Dragon Ball</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="personagens">
+    <div class="personagem">
+      <picture>
+        <source srcset="src/imagens/DRAGONBALL-DESKTOP.jpg" media="(min-width: 768px)">
+        <img id="imagem-personagem" src="src/imagens/DRAGONBALL-MOBILE.jpg" alt="Codebreaker">
+      </picture>
+      <div class="conteudo">
+        <h1 id="nome">Dragon ball</h1>
+        <p id="descricao">
+          Uma saga lendária que atravessa gerações. 'Dragon Ball' acompanha Goku desde sua infância até se tornar um guerreiro incomparável, enfrentando inimigos cada vez mais poderosos e desafiando os limites do impossível.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <ul class="botoes">
+    <li><button class="botao selecionado" onclick="trocarPersonagem(0)" title="Dragon Ball"><img src="./src/imagens/DRAGONBALL-DESKTOP.jpg" alt="Dragon Ball"></button></li>
+    <li><button class="botao" onclick="trocarPersonagem(1)" title="Jujutsu Kaisen"><img src="./src/imagens/JUJUTSUKAISEN-DESKTOP.jpg" alt="Jujutsu Kaisen"></button></li>
+    <li><button class="botao" onclick="trocarPersonagem(2)" title="Tokyo Ghoul"><img src="./src/imagens/TOKYOGHOUL-DESKTOP.jpg" alt="Tokyo Ghoul"></button></li>
+    <li><button class="botao" onclick="trocarPersonagem(3)" title="Attack on Titan"><img src="./src/imagens/ATACKONTITAN-DESKTOP.jpg" alt="Attack on Titan"></button></li>
+    <li><button class="botao" onclick="trocarPersonagem(4)" title="Naruto"><img src="./src/imagens/NARUTO-MOBILE.jpg" alt="Naruto"></button></li>
+    <li><button class="botao" onclick="trocarPersonagem(5)" title="Solo Leveling"><img src="./src/imagens/SOLOLEVELING-DESKTOP.jpg" alt="Solo Leveling"></button></li>
+  </ul>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
